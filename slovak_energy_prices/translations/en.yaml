@@ -1,0 +1,106 @@
+configuration:
+  port:
+    name: Port
+    description: TCP port used by the API service.
+  timezone:
+    name: Time zone
+    description: Time zone label used for display and future normalization.
+  okte_enabled:
+    name: Enable OKTE
+    description: Fetch Slovak day-ahead electricity prices from OKTE.
+  urso_enabled:
+    name: Enable ÚRSO experimental sources
+    description: Reserved for future tariff import work.
+  electricity_pricing_mode:
+    name: Electricity Pricing Mode
+    description: Use household_fixed for most domestic users, spot_okte for spot-linked contracts, or manual for custom pricing.
+  electricity_preset_id:
+    name: Electricity Preset
+    description: Optional bundled provider tariff preset id for household-fixed electricity.
+  electricity_charge_structure:
+    name: Electricity Charge Structure
+    description: Use total for one combined contract price or split for commodity, distribution, taxes, and other components.
+  electricity_fixed_price_eur_per_kwh:
+    name: Electricity Fixed Price
+    description: Effective household electricity price in EUR per kWh.
+  electricity_fixed_monthly_fee_eur:
+    name: Electricity Monthly Fee
+    description: Fixed monthly electricity fee in EUR.
+  electricity_commodity_price_eur_per_kwh:
+    name: Electricity Commodity Price
+    description: Commodity component in EUR per kWh for split mode.
+  electricity_distribution_price_eur_per_kwh:
+    name: Electricity Distribution Price
+    description: Distribution component in EUR per kWh for split mode.
+  electricity_taxes_price_eur_per_kwh:
+    name: Electricity Taxes Price
+    description: Taxes and regulated levies in EUR per kWh for split mode.
+  electricity_other_price_eur_per_kwh:
+    name: Electricity Other Price
+    description: Any remaining variable electricity component in EUR per kWh for split mode.
+  electricity_supplier_fixed_monthly_fee_eur:
+    name: Electricity Supplier Fixed Fee
+    description: Supplier fixed monthly fee in EUR for split mode.
+  electricity_distribution_fixed_monthly_fee_eur:
+    name: Electricity Distribution Fixed Fee
+    description: Distribution fixed monthly fee in EUR for split mode.
+  electricity_tax_fixed_monthly_fee_eur:
+    name: Electricity Tax Fixed Fee
+    description: Fixed tax or levy amount in EUR per month for split mode.
+  electricity_other_fixed_monthly_fee_eur:
+    name: Electricity Other Fixed Fee
+    description: Any remaining fixed electricity monthly fee in EUR for split mode.
+  gas_pricing_mode:
+    name: Gas Pricing Mode
+    description: Use household_fixed for most domestic users or manual for custom pricing.
+  gas_preset_id:
+    name: Gas Preset
+    description: Optional bundled provider tariff preset id for household-fixed gas.
+  gas_charge_structure:
+    name: Gas Charge Structure
+    description: Use total for one combined contract price or split for commodity, distribution, taxes, and other components.
+  gas_fixed_price_eur_per_kwh:
+    name: Gas Fixed Price
+    description: Effective household gas price in EUR per kWh.
+  gas_fixed_monthly_fee_eur:
+    name: Gas Monthly Fee
+    description: Fixed monthly gas fee in EUR.
+  gas_commodity_price_eur_per_kwh:
+    name: Gas Commodity Price
+    description: Commodity component in EUR per kWh for split mode.
+  gas_distribution_price_eur_per_kwh:
+    name: Gas Distribution Price
+    description: Distribution component in EUR per kWh for split mode.
+  gas_taxes_price_eur_per_kwh:
+    name: Gas Taxes Price
+    description: Taxes and regulated levies in EUR per kWh for split mode.
+  gas_other_price_eur_per_kwh:
+    name: Gas Other Price
+    description: Any remaining variable gas component in EUR per kWh for split mode.
+  gas_supplier_fixed_monthly_fee_eur:
+    name: Gas Supplier Fixed Fee
+    description: Supplier fixed monthly fee in EUR for split mode.
+  gas_distribution_fixed_monthly_fee_eur:
+    name: Gas Distribution Fixed Fee
+    description: Distribution fixed monthly fee in EUR for split mode.
+  gas_tax_fixed_monthly_fee_eur:
+    name: Gas Tax Fixed Fee
+    description: Fixed tax or levy amount in EUR per month for split mode.
+  gas_other_fixed_monthly_fee_eur:
+    name: Gas Other Fixed Fee
+    description: Any remaining fixed gas monthly fee in EUR for split mode.
+  water_pricing_mode:
+    name: Water Pricing Mode
+    description: Use household_fixed for standard local tariffs or manual for custom pricing.
+  water_preset_id:
+    name: Water Preset
+    description: Reserved for future bundled water-operator tariff presets.
+  water_supply_price_eur_per_m3:
+    name: Water Supply Price
+    description: Water supply variable price in EUR per m3.
+  water_wastewater_price_eur_per_m3:
+    name: Wastewater Price
+    description: Wastewater variable price in EUR per m3.
+  water_fixed_monthly_fee_eur:
+    name: Water Monthly Fee
+    description: Fixed monthly water fee in EUR.

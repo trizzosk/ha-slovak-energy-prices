@@ -1,0 +1,90 @@
+name: Slovak Energy Prices
+version: 0.1.0
+slug: slovak_energy_prices
+description: Slovak energy price service for Home Assistant cost calculations
+url: https://github.com/trizzo/ha-slovak-energy-prices
+startup: application
+boot: auto
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ports:
+  8099/tcp: 8099
+ports_description:
+  8099/tcp: Slovak Energy Prices API
+options:
+  port: 8099
+  timezone: Europe/Bratislava
+  okte_enabled: true
+  urso_enabled: false
+  electricity_pricing_mode: household_fixed
+  electricity_preset_id: ""
+  electricity_charge_structure: total
+  electricity_fixed_price_eur_per_kwh: 0.18
+  electricity_fixed_monthly_fee_eur: 0.0
+  electricity_commodity_price_eur_per_kwh: 0.18
+  electricity_distribution_price_eur_per_kwh: 0.0
+  electricity_taxes_price_eur_per_kwh: 0.0
+  electricity_other_price_eur_per_kwh: 0.0
+  electricity_supplier_fixed_monthly_fee_eur: 0.0
+  electricity_distribution_fixed_monthly_fee_eur: 0.0
+  electricity_tax_fixed_monthly_fee_eur: 0.0
+  electricity_other_fixed_monthly_fee_eur: 0.0
+  gas_pricing_mode: household_fixed
+  gas_preset_id: ""
+  gas_charge_structure: total
+  gas_fixed_price_eur_per_kwh: 0.065
+  gas_fixed_monthly_fee_eur: 0.0
+  gas_commodity_price_eur_per_kwh: 0.065
+  gas_distribution_price_eur_per_kwh: 0.0
+  gas_taxes_price_eur_per_kwh: 0.0
+  gas_other_price_eur_per_kwh: 0.0
+  gas_supplier_fixed_monthly_fee_eur: 0.0
+  gas_distribution_fixed_monthly_fee_eur: 0.0
+  gas_tax_fixed_monthly_fee_eur: 0.0
+  gas_other_fixed_monthly_fee_eur: 0.0
+  water_pricing_mode: household_fixed
+  water_preset_id: ""
+  water_supply_price_eur_per_m3: 1.2
+  water_wastewater_price_eur_per_m3: 1.1
+  water_fixed_monthly_fee_eur: 0.0
+schema:
+  port: port
+  timezone: str
+  okte_enabled: bool
+  urso_enabled: bool
+  electricity_pricing_mode: str
+  electricity_preset_id: str
+  electricity_charge_structure: str
+  electricity_fixed_price_eur_per_kwh: float
+  electricity_fixed_monthly_fee_eur: float
+  electricity_commodity_price_eur_per_kwh: float
+  electricity_distribution_price_eur_per_kwh: float
+  electricity_taxes_price_eur_per_kwh: float
+  electricity_other_price_eur_per_kwh: float
+  electricity_supplier_fixed_monthly_fee_eur: float
+  electricity_distribution_fixed_monthly_fee_eur: float
+  electricity_tax_fixed_monthly_fee_eur: float
+  electricity_other_fixed_monthly_fee_eur: float
+  gas_pricing_mode: str
+  gas_preset_id: str
+  gas_charge_structure: str
+  gas_fixed_price_eur_per_kwh: float
+  gas_fixed_monthly_fee_eur: float
+  gas_commodity_price_eur_per_kwh: float
+  gas_distribution_price_eur_per_kwh: float
+  gas_taxes_price_eur_per_kwh: float
+  gas_other_price_eur_per_kwh: float
+  gas_supplier_fixed_monthly_fee_eur: float
+  gas_distribution_fixed_monthly_fee_eur: float
+  gas_tax_fixed_monthly_fee_eur: float
+  gas_other_fixed_monthly_fee_eur: float
+  water_pricing_mode: str
+  water_preset_id: str
+  water_supply_price_eur_per_m3: float
+  water_wastewater_price_eur_per_m3: float
+  water_fixed_monthly_fee_eur: float

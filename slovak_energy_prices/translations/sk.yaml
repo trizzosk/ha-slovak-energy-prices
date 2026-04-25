@@ -1,0 +1,106 @@
+configuration:
+  port:
+    name: Port
+    description: TCP port pre API sluzbu.
+  timezone:
+    name: Casove pasmo
+    description: Casove pasmo pouzite pre zobrazenie a buducu normalizaciu.
+  okte_enabled:
+    name: Povolit OKTE
+    description: Nacita slovenske den-vopred ceny elektriny z OKTE.
+  urso_enabled:
+    name: Povolit experimentálne zdroje ÚRSO
+    description: Rezervovane pre buducu pracu na importe tarif.
+  electricity_pricing_mode:
+    name: Rezim ceny elektriny
+    description: household_fixed pre vacsinu domacnosti, spot_okte pre spotove kontrakty, manual pre vlastne ceny.
+  electricity_preset_id:
+    name: Predvolba elektriny
+    description: Volitelne ID integrovanej tarifnej predvolby pre fixnu cenu elektriny.
+  electricity_charge_structure:
+    name: Struktura ceny elektriny
+    description: total pre jednu vyslednu cenu zo zmluvy, split pre oddelenu komoditu, distribuciu, dane a dalsie zlozky.
+  electricity_fixed_price_eur_per_kwh:
+    name: Fixna cena elektriny
+    description: Efektivna cena elektriny pre domacnost v EUR za kWh.
+  electricity_fixed_monthly_fee_eur:
+    name: Mesacny poplatok elektrina
+    description: Fixny mesacny poplatok za elektrinu v EUR.
+  electricity_commodity_price_eur_per_kwh:
+    name: Komodita elektrina
+    description: Komoditna zlozka v EUR za kWh pre split rezim.
+  electricity_distribution_price_eur_per_kwh:
+    name: Distribucia elektrina
+    description: Distribucna zlozka v EUR za kWh pre split rezim.
+  electricity_taxes_price_eur_per_kwh:
+    name: Dane elektrina
+    description: Dane a regulovane odvody v EUR za kWh pre split rezim.
+  electricity_other_price_eur_per_kwh:
+    name: Ine elektrina
+    description: Ostatna variabilna zlozka elektriny v EUR za kWh pre split rezim.
+  electricity_supplier_fixed_monthly_fee_eur:
+    name: Fix dodavatel elektrina
+    description: Fixny mesacny poplatok dodavatela v EUR pre split rezim.
+  electricity_distribution_fixed_monthly_fee_eur:
+    name: Fix distribucia elektrina
+    description: Fixny mesacny distribucny poplatok v EUR pre split rezim.
+  electricity_tax_fixed_monthly_fee_eur:
+    name: Fix dane elektrina
+    description: Fixna dan alebo odvod v EUR za mesiac pre split rezim.
+  electricity_other_fixed_monthly_fee_eur:
+    name: Fix ine elektrina
+    description: Ostatny fixny poplatok elektriny v EUR za mesiac pre split rezim.
+  gas_pricing_mode:
+    name: Rezim ceny plynu
+    description: household_fixed pre vacsinu domacnosti, manual pre vlastne ceny.
+  gas_preset_id:
+    name: Predvolba plynu
+    description: Volitelne ID integrovanej tarifnej predvolby pre fixnu cenu plynu.
+  gas_charge_structure:
+    name: Struktura ceny plynu
+    description: total pre jednu vyslednu cenu zo zmluvy, split pre oddelenu komoditu, distribuciu, dane a dalsie zlozky.
+  gas_fixed_price_eur_per_kwh:
+    name: Fixna cena plynu
+    description: Efektivna cena plynu pre domacnost v EUR za kWh.
+  gas_fixed_monthly_fee_eur:
+    name: Mesacny poplatok plyn
+    description: Fixny mesacny poplatok za plyn v EUR.
+  gas_commodity_price_eur_per_kwh:
+    name: Komodita plyn
+    description: Komoditna zlozka v EUR za kWh pre split rezim.
+  gas_distribution_price_eur_per_kwh:
+    name: Distribucia plyn
+    description: Distribucna zlozka v EUR za kWh pre split rezim.
+  gas_taxes_price_eur_per_kwh:
+    name: Dane plyn
+    description: Dane a regulovane odvody v EUR za kWh pre split rezim.
+  gas_other_price_eur_per_kwh:
+    name: Ine plyn
+    description: Ostatna variabilna zlozka plynu v EUR za kWh pre split rezim.
+  gas_supplier_fixed_monthly_fee_eur:
+    name: Fix dodavatel plyn
+    description: Fixny mesacny poplatok dodavatela v EUR pre split rezim.
+  gas_distribution_fixed_monthly_fee_eur:
+    name: Fix distribucia plyn
+    description: Fixny mesacny distribucny poplatok v EUR pre split rezim.
+  gas_tax_fixed_monthly_fee_eur:
+    name: Fix dane plyn
+    description: Fixna dan alebo odvod v EUR za mesiac pre split rezim.
+  gas_other_fixed_monthly_fee_eur:
+    name: Fix ine plyn
+    description: Ostatny fixny poplatok plynu v EUR za mesiac pre split rezim.
+  water_pricing_mode:
+    name: Rezim ceny vody
+    description: household_fixed pre standardne lokalne tarify, manual pre vlastne ceny.
+  water_preset_id:
+    name: Predvolba vody
+    description: Rezervovane pre buduce integrovane tarifne predvolby vodarenskych operatorov.
+  water_supply_price_eur_per_m3:
+    name: Cena vodneho
+    description: Variabilna cena dodavky vody v EUR za m3.
+  water_wastewater_price_eur_per_m3:
+    name: Cena stocneho
+    description: Variabilna cena odvadzania odpadovej vody v EUR za m3.
+  water_fixed_monthly_fee_eur:
+    name: Mesacny poplatok voda
+    description: Fixny mesacny poplatok za vodu v EUR.
